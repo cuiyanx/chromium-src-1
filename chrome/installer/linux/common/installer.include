@@ -208,6 +208,11 @@ stage_install_common() {
     install -m ${SHLIB_PERMS} "${BUILDDIR}/libclDNN64.so" "${STAGEDIR}/${INSTALLDIR}/"
   fi
 
+  # MKLDNN.
+  if [ -f "${BUILDDIR}/libmkldnn.so" ]; then
+    install -m ${SHLIB_PERMS} "${BUILDDIR}/libmkldnn.so" "${STAGEDIR}/${INSTALLDIR}/"
+  fi
+
   # ANGLE
   if [ -f "${BUILDDIR}/libEGL.so" ]; then
     if [ "${CHANNEL}" != "stable" ]; then
