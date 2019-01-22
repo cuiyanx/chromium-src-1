@@ -85,8 +85,8 @@
 #include "services/tracing/public/cpp/tracing_features.h"
 #include "services/tracing/public/mojom/constants.mojom.h"
 #include "services/tracing/tracing_service.h"
-#include "services/ml/public/interfaces/constants.mojom.h"
 #include "services/ml/ml_service.h"
+#include "services/ml/public/mojom/constants.mojom.h"
 #include "ui/base/buildflags.h"
 #include "ui/base/ui_base_features.h"
 
