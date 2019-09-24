@@ -87,8 +87,8 @@ void GpuServiceFactory::RunService(
 
   if (service_name == ml::mojom::kServiceName) {
     scoped_refptr<base::SingleThreadTaskRunner> task_runner =
-        base::CreateSingleThreadTaskRunnerWithTraits(
-            {base::TaskPriority::USER_BLOCKING});
+        base::CreateSingleThreadTaskRunner(
+            {base::ThreadPool(), base::TaskPriority::USER_BLOCKING});
     task_runner->PostTask(
         FROM_HERE,
         base::BindOnce(
