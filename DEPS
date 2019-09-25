@@ -1503,7 +1503,7 @@ deps = {
   },
 
   'src/third_party/libinference_engine/dldt': {
-    'url': 'https://github.com/opencv/dldt.git@669bee86e580cbbc8ef40b440ab195ba2cbf5142',
+    'url': 'https://github.com/fujunwei/dldt.git@d44125d5f2226ca8a4616578aec9231f90408280',
     'condition': 'checkout_linux',
   },
 
